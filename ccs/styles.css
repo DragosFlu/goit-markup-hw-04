@@ -52,6 +52,10 @@ a:visited {
   color: inherit;
 }
 
+a.active {
+  color: var(--active-color);
+}
+
 a:focus,
 a:hover,
 a:active {
@@ -105,6 +109,7 @@ button:active {
 }
 
 .article-title {
+  margin-bottom: 10px;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -267,7 +272,7 @@ button:active {
   display: flex;
   justify-content: center;
   margin-left: 385px;
-  gap: 50px;
+  gap: 60px;
 }
 
 .header-contact .item:not(:last-child) {
@@ -280,6 +285,14 @@ button:active {
   padding: 200px 0;
   text-align: center;
   background-color: #333333;
+}
+
+.hero {
+  background-image: url(/images/hero_img.png);
+  background-color: #2f303a66;
+  width: 1600px;
+  height: 600px;
+  margin: auto;
 }
 
 .hero .container {
@@ -307,6 +320,7 @@ button:active {
 
 .item-desc {
   padding: 30px 32px;
+  background-color: var(--active-text-color);
 }
 
 /* Footer */
@@ -336,4 +350,11 @@ button:active {
   padding: 20px 24px;
   border: 1px solid var(--bg-color-card);
   border-top: 0;
+}
+
+.article-thumb {
+  border-radius: 4px;
+  background: var(--filter-background-color);
+  margin-bottom: 30px;
+  padding: 25px 100px;
 }

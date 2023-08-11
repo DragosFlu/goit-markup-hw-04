@@ -36,12 +36,18 @@
         <ul class="menu-contacts">
           <li>
             <a class="header-contacts" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+              ><svg width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope" />
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li>
             <a class="header-contacts" href="tel:+12127724150"
-              >+1 212-772-4150</a
+              ><svg width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone" />
+              </svg>
+              +1 212-772-4150</a
             >
           </li>
         </ul>
@@ -170,28 +176,64 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="index.html"
-          ><h2 class="logo-dark-bg logo">
-            <span class="logo-color">Web</span>Studio
-          </h2></a
-        >
-        <address class="address">
-          <ul class="address-list">
-            <li>695 Park Ave, NY 10065, USA</li>
+      <section class="container">
+        <div>
+          <a href="index.html"
+            ><h2 class="logo-dark-bg logo">
+              <span class="logo-color">Web</span>Studio
+            </h2></a
+          >
+          <address class="address">
+            <ul class="address-list">
+              <li>695 Park Ave, NY 10065, USA</li>
+              <li>
+                <a class="footer-contacts" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="footer-contacts" href="tel:+12127724150"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-social">
+          <h3 class="article-title">Find us on</h3>
+          <ul class="footer-icons">
             <li>
-              <a class="footer-contacts" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="footer-contacts" href="tel:+12127724150"
-                >+1 212-772-4150</a
-              >
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

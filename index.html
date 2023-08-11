@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./ccs/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./ccs/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -29,19 +29,25 @@
           >
           <ul class="menu">
             <li><a href="index.html" class="active">Studio</a></li>
-            <li><a href="portfolio.html" >Portfolio</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contacts.html">Contacts</a></li>
           </ul>
         </nav>
         <ul class="menu-contacts">
           <li>
             <a class="header-contacts" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+              ><svg width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope" />
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li>
             <a class="header-contacts" href="tel:+12127724150"
-              >+1 212-772-4150</a
+              ><svg width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone" />
+              </svg>
+              +1 212-772-4150</a
             >
           </li>
         </ul>
@@ -67,7 +73,9 @@
           <ul class="article-list">
             <li>
               <div class="article-thumb">
-                <img class="article-icon" src="./antenna.svg" alt="antenna" />
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-antenna" />
+                </svg>
               </div>
               <h5 class="article-title">ATTENTION TO DETAILS</h5>
 
@@ -80,7 +88,7 @@
             <li>
               <div class="article-thumb">
                 <svg width="70px" height="70px">
-                  <use href="./logo4.svg"  >
+                  <use href="./images/icons.svg#icon-clock" />
                 </svg>
               </div>
               <h5 class="article-title">PUNCTUALITY</h5>
@@ -92,7 +100,9 @@
             </li>
             <li>
               <div class="article-thumb">
-                <img class="article-icon" src="./antenna.svg" alt="antenna" />
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-diagram" />
+                </svg>
               </div>
               <h5 class="article-title">PLANNING</h5>
               <p class="article-text">
@@ -103,7 +113,9 @@
             </li>
             <li>
               <div class="article-thumb">
-                <img class="article-icon" src="./antenna.svg" alt="antenna" />
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-astronaut" />
+                </svg>
               </div>
               <h5 class="article-title">MODERN TECHNOLOGIES</h5>
               <p class="article-text">
@@ -163,6 +175,42 @@
               <div class="item-desc">
                 <h3 class="member-name">Christopher Walker</h3>
                 <p class="member-position">Product Designer</p>
+                <ul class="item-socials">
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -175,6 +223,42 @@
               <div class="item-desc">
                 <h3 class="member-name">Kylie Evans</h3>
                 <p class="member-position">Frontend Developer</p>
+                <ul class="item-socials">
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -187,6 +271,42 @@
               <div class="item-desc">
                 <h3 class="member-name">Ryan Harris</h3>
                 <p class="member-position">Marketing</p>
+                <ul class="item-socials">
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="team-socials" href="">
+                      <svg width="20px" height="20px">
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -204,31 +324,119 @@
           </ul>
         </div>
       </section>
+
+      <!-- Clients -->
+      <section class="section">
+        <div class="container">
+          <h3 class="section-title">Regular Customers</h3>
+
+          <ul class="clients list">
+            <li class="client-list">
+              <a class="client-item link" href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use xlink:href="./images/icons.svg#icon-logo1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-list">
+              <a class="client-item link" href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use xlink:href="./images/icons.svg#icon-logo2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-list">
+              <a class="client-item link" href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use xlink:href="./images/icons.svg#icon-logo3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-list">
+              <a class="client-item link" href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use xlink:href="./images/icons.svg#icon-logo4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-list">
+              <a class="client-item link" href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use xlink:href="./images/icons.svg#icon-logo5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-list">
+              <a class="client-item link" href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use xlink:href="./images/icons.svg#icon-logo6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <a href="index.html"
-          ><h2 class="logo-dark-bg logo">
-            <span class="logo-color">Web</span>Studio
-          </h2></a
-        >
-        <address class="address">
-          <ul class="address-list">
-            <li>695 Park Ave, NY 10065, USA</li>
+      <section class="container">
+        <div>
+          <a href="index.html"
+            ><h2 class="logo-dark-bg logo">
+              <span class="logo-color">Web</span>Studio
+            </h2></a
+          >
+          <address class="address">
+            <ul class="address-list">
+              <li>695 Park Ave, NY 10065, USA</li>
+              <li>
+                <a class="footer-contacts" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="footer-contacts" href="tel:+12127724150"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-social">
+          <h3 class="article-title">Find us on</h3>
+          <ul class="footer-icons">
             <li>
-              <a class="footer-contacts" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="footer-contacts" href="tel:+12127724150"
-                >+1 212-772-4150</a
-              >
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon" href="">
+                <svg width="20px" height="20px">
+                  <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

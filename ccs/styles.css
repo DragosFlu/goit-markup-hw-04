@@ -6,6 +6,7 @@
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --filter-background-color: #f5f4fa;
   --bg-dark-color: #2f303a;
+  --svg-color: #afb1b8;
 }
 
 body {
@@ -68,6 +69,8 @@ button:active {
   background-color: var(--active-color);
   color: var(--active-text-color);
   cursor: pointer;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
@@ -116,6 +119,11 @@ button:active {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+
+.footer-social .article-title {
+  color: var(--active-text-color);
+  margin-bottom: 20px;
 }
 
 .article-text {
@@ -169,6 +177,7 @@ button:active {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-bottom: 16px;
 }
 
 .button {
@@ -185,12 +194,20 @@ button:active {
 }
 
 .header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: var(--alternate-text-color);
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  fill: var(--alternate-text-color);
+}
+
+.header-contacts:hover {
+  fill: var(--active-color);
 }
 
 .product-name {
@@ -271,7 +288,7 @@ button:active {
 .menu-contacts {
   display: flex;
   justify-content: center;
-  margin-left: 385px;
+  margin-left: auto;
   gap: 60px;
 }
 
@@ -284,11 +301,10 @@ button:active {
 .section.hero {
   padding: 200px 0;
   text-align: center;
-  background-color: #333333;
 }
 
 .hero {
-  background-image: url(/images/hero_img.png);
+  background-image: url(../images/hero_img.png);
   background-color: #2f303a66;
   width: 1600px;
   height: 600px;
@@ -357,4 +373,85 @@ button:active {
   background: var(--filter-background-color);
   margin-bottom: 30px;
   padding: 25px 100px;
+}
+
+/* Clients */
+.clients {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: var(--svg-color);
+}
+
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  fill: currentColor;
+}
+
+.client-item:hover,
+.client-item:focus {
+  border-color: var(--active-color);
+}
+
+.footer .container {
+  display: flex;
+}
+.footer-social {
+  margin-left: 94px;
+}
+
+.footer-social .footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--active-text-color);
+}
+
+.footer-icons .footer-icon {
+  background-color: #ffffff1a;
+}
+
+.footer-icons .footer-icon:hover,
+.footer-icons .footer-icon:focus {
+  background-color: #2196f3;
+}
+
+.item-desc .item-socials {
+  display: flex;
+  gap: 10px;
+}
+
+.team-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--svg-color);
+}
+
+.item-socials .team-socials:hover,
+.item-socials .team-socials:focus {
+  background-color: var(--active-color);
+  fill: var(--active-text-color);
+}
+
+.product-list li:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
